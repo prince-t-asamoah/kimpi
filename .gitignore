@@ -1,0 +1,54 @@
+# --------------------
+# General
+# --------------------
+node_modules/
+.env
+.env.*     # e.g. .env.local, .env.production
+dist/
+build/
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# --------------------
+# VSCode & IDE
+# --------------------
+.vscode/
+.idea/
+*.sw?
+
+# --------------------
+# TypeScript
+# --------------------
+*.tsbuildinfo
+
+# --------------------
+# Next.js Frontend
+# --------------------
+.next/
+out/
+public/static/
+
+# --------------------
+# React/Vite Frontend (if applicable)
+# --------------------
+coverage/
+*.local
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# --------------------
+# Express Backend
+# --------------------
+/src/**/*.js
+/src/**/*.js.map
+/build/
+lib/
+logs/
