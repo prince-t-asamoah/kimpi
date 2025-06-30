@@ -1,9 +1,9 @@
 /** @type {import('prettier').Config} */
 
-import prettierSharedConfig from './prettier.config.js';
+import prettierSharedConfig from '../prettier.config.js';
 
 const config = {
-    ...prettierSharedConfig
+    ...prettierSharedConfig,
 }
 
 export default config;
