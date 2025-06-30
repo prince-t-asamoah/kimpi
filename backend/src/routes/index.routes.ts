@@ -12,10 +12,10 @@ indexRouter.get('/health', (_, res) => {
         appVersion: process.env.APP_VERSION || '0.0.0',
         appDescription: process.env.APP_DESCRIPTION || 'A REST API',
         appAuthor: process.env.APP_AUTHOR || 'Unknown',
-        status: "running",
+        status: 'running',
         timeStamp: new Date().toISOString(),
         currentYear: new Date().getFullYear(),
     });
-})
+});
 
 export default indexRouter;
