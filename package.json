@@ -1,0 +1,31 @@
+{
+  "name": "kimpi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "lint": "concurrently --kill-others \"npm run lint --workspace backend\" \"npm run lint --workspace frontend\"",
+    "format": "concurrently --kill-others \"npm run format --workspace backend\" \"npm run format --workspace frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prince-t-asamoah/kimpi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prince-t-asamoah/kimpi/issues"
+  },
+  "homepage": "https://github.com/prince-t-asamoah/kimpi#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
