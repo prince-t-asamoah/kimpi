@@ -9,9 +9,10 @@
   ],
   "scripts": {
     "dev": "concurrently --kill-others \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
-    "lint": "concurrently --kill-others \"npm run lint --workspace backend\" \"npm run lint --workspace frontend\"",
-    "format": "concurrently --kill-others \"npm run format --workspace backend\" \"npm run format --workspace frontend\"",
-    "test": "jest --passWithNoTests"
+    "lint": "npm run lint --workspace backend && npm run lint --workspace frontend",
+    "format": "npm run format --workspace backend && npm run format --workspace frontend",
+    "test": "jest",
+    "test:ci": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
