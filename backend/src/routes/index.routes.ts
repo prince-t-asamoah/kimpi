@@ -3,10 +3,6 @@ import express from 'express';
 const indexRouter = express.Router();
 
 indexRouter.get('/', (_, res) => {
-  res.redirect('health');
-});
-
-indexRouter.get('/health', (_, res) => {
   res.render('index', {
     appName: process.env.APP_NAME || 'REST API',
     appVersion: process.env.APP_VERSION || '0.0.0',

@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import morgan from 'morgan';
-import apiRouter from './routes/index.routes.js';
+import apisRouter from './routes/index.js';
 import logger from './utils/logger.js';
 
 dotenv.config();
@@ -21,7 +21,8 @@ app.use(morgan('tiny'));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use('/api/v1', apiRouter);
+app.get('/', (_, res) => res.redirect('/api/v1'));
+app.use('/api/v1', apisRouter);
 
 app.listen(PORT, () => {
   logger.info(`Server is running on http://localhost:${PORT}`);
