@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"src/**/*.{tsx,js,json}\" --ignore-unknown"
+    "format": "prettier --write \"src/**/*.{tsx,js,json}\" --ignore-unknown",
+    "test": "jest --config jest.config.ts"
   },
   "dependencies": {
     "next": "15.3.4",
