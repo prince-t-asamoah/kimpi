@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import morgan from 'morgan';
-import apisRouter from './routes/index.js';
+import apisRouter from './routes/index.routes.js';
 
 dotenv.config();
 
