@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"src/**/*.{tsx,js,json}\" --ignore-unknown",
-    "test": "jest --config jest.config.ts"
+    "test": "jest --config jest.config.js"
   },
   "dependencies": {
     "next": "15.3.4",
